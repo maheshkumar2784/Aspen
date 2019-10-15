@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test">
+
+  <test thread-count="5" name="ScheduleAppt">
+    <classes>
+      <class name="aspenTestCases.ScheduleAppt"/> 
+    </classes>
+  </test> <!-- Test -->
+
+  <test thread-count="5" name="AspenMyAccount">
+    <classes> 
+      <class name="aspenTestCases.AspenMyAccount"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+
+</suite> <!-- Suite -->

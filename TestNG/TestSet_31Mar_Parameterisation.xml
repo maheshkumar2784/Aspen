@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="Test1">
+		<parameter name="url" value="http://www.facebook.com"></parameter>
+		<parameter name="user" value="selTraining"></parameter>
+		<classes>
+			<class name="TestSet.test1" />
+		</classes>
+	</test> <!-- Test -->
+
+		<test name="Test2">
+		<parameter name="url" value="http://www.rediffmail.com"></parameter>
+		<parameter name="user" value="selTraining"></parameter>
+		<classes>
+			<class name="TestSet.test1" />
+		</classes>
+	</test>
+	
+	<!-- <test name="Test2"> <classes> <class name="TestSet.test2" /> </classes> 
+		</test> <test name="Test3"> <classes> <class name="TestSet.test2" /> </classes> 
+		</test> -->
+
+</suite> <!-- Suite -->
