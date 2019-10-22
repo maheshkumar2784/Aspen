@@ -121,6 +121,7 @@ public class TestBase extends commonObjects{
 			options.addArguments("disable-infobars");
 			//			options.addArguments("headless");  //to open browser in headless mode
 			driver=new ChromeDriver(options);
+			//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 
 		}else
