@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke suite" preserve-order="true" parallel="tests" thread-count="60">
+
+<parameter name="environment" value="QA"/>
+<parameter name="environmentURL" value="http://c660kjg.lhtrqa.loc:8082/site2#/"/>
+<parameter name="buildno" value="4444"/>
+<parameter name="userName" value="Ganga"/>
+<parameter name="executionMode" value="Local"/>
+<parameter name="runMode" value="normal"/>
+<parameter name="indentNo" value="2951"/>
+<parameter name="requirement" value="BVT_QA"/>
+
+<test verbose="2" name="BVTs_Application_BasicStartUp" > 
+			<parameter name="device" value="PC"/>
+			<parameter name="os" value="Windows"/>
+			<parameter name="osVersion" value="Windows 7"/>
+			<parameter name="browser" value="Chrome"/>
+			<parameter name="browserversion" value="43"/>
+			<parameter name="machineIP" value="10.112.75.159"/>
+			<parameter name="machinePort" value="5540"/>
+			<parameter name="appUser" value="qa_mj021"/>
+			<parameter name="appPassword" value="Hello@1234"/>
+			<parameter name="InstanceName" value="Provision QA - Auto_DetailsSmoke_MJ_QA"/>
+			<classes>
+				<class name="Tests.buildVerificationTests.BVTs_Application_BasicStartUp"/>
+			</classes>
+ </test>
+ 
+  <test verbose="2" name="BVTs_Admin_Datasets" > 
+			<parameter name="device" value="PC"/>
+			<parameter name="os" value="Windows"/>
+			<parameter name="osVersion" value="Windows 7"/>
+			<parameter name="browser" value="Chrome"/>
+			<parameter name="browserversion" value="43"/>
+			<parameter name="machineIP" value="10.112.75.159"/>
+			<parameter name="machinePort" value="5540"/>
+			<parameter name="appUser" value="qa_mj024"/>
+			<parameter name="appPassword" value="Hello@1234"/>
+			<parameter name="InstanceName" value="Provision QA - Auto_DetailsSmoke_MJ_QA"/>
+			<classes>
+				<class name="Tests.buildVerificationTests.BVTs_Admin_Datasets"/>
+			</classes>
+ </test>
+ 
+ <test verbose="2" name="BVTs_Reporting_Verification" > 
+            
+            <parameter name="device" value="PC"/>
+            <parameter name="os" value="Windows"/>
+            <parameter name="osVersion" value="Windows 7"/>
+            <parameter name="browser" value="Chrome"/>
+            <parameter name="browserversion" value="43"/>
+            <parameter name="machineIP" value="10.112.66.167"/>
+            <parameter name="machinePort" value="5543"/>
+           <parameter name="appUser" value="qa_build11"/>
+			<parameter name="appPassword" value="Hello@12345"/>
+			<parameter name="InstanceName" value="Provision QA - buildchecks_QA"/>
+            <classes>
+                <class name="Tests.buildVerificationTests.BVTs_Reporting_Verification"/>
+            </classes>
+ </test>
+ 
+<test verbose="2" name="BVTs_DataEntry_AddUpdateDelete" > 
+            
+            <parameter name="device" value="PC"/>
+            <parameter name="os" value="Windows"/>
+            <parameter name="osVersion" value="Windows 7"/>
+            <parameter name="browser" value="Chrome"/>
+            <parameter name="browserversion" value="43"/>
+            <parameter name="machineIP" value="10.112.66.167"/>
+            <parameter name="machinePort" value="5543"/>
+            <parameter name="appUser" value="qa_build10"/>
+			<parameter name="appPassword" value="Hello@12345"/>
+			<parameter name="InstanceName" value="Provision QA - buildchecks_QA"/>
+            <classes>
+                <class name="Tests.buildVerificationTests.BVTs_DataEntry_AddUpdateDelete"/>
+            </classes>
+ </test>
+ 
+ <test verbose="2" name="BVTs_BridgeImport_Verification" > 
+			
+			<parameter name="device" value="PC"/>
+			<parameter name="os" value="Windows"/>
+			<parameter name="osVersion" value="Windows 7"/>
+			<parameter name="browser" value="Chrome"/>
+			<parameter name="browserversion" value="43"/>
+			<parameter name="machineIP" value="10.112.66.152"/>
+			<parameter name="machinePort" value="5540"/>
+			<parameter name="appUser" value="qa_bhavanesh1"/>
+			<parameter name="appPassword" value="Hello@123"/>
+			<parameter name="InstanceName" value="Provision QA - DevCheck_Smoke"/>
+			<classes>
+				<class name="Tests.buildVerificationTests.BVTs_BridgeImport_Verification"/>
+			</classes> 
+ </test>
+ 
+ <test verbose="2" name="BVTs_Admin_PreTaxBookIncome" > 
+			
+			<parameter name="device" value="PC"/>
+			<parameter name="os" value="Windows"/>
+			<parameter name="osVersion" value="Windows 7"/>
+			<parameter name="browser" value="Chrome"/>
+			<parameter name="browserversion" value="43"/>
+			<parameter name="machineIP" value="10.112.66.152"/>
+			<parameter name="machinePort" value="5540"/>
+			<parameter name="appUser" value="qa_bhavanesh2"/>
+			<parameter name="appPassword" value="Hello@123"/>
+			<parameter name="InstanceName" value="Provision QA - DevCheck_Smoke"/>
+			<classes>
+				<class name="Tests.buildVerificationTests.BVTs_Admin_PreTaxBookIncome"/>
+			</classes> 
+ </test>
+ 
+</suite> <!-- Default suite -->

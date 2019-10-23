@@ -71,11 +71,11 @@ public class TestBase extends commonObjects{
 		extentHtmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/config/ExtentReportConfig.xml");
 		extentReports.attachReporter(extentHtmlReporter); 
 		extentReports.setSystemInfo("Environment",  prpt.getProperty("environment"));
-		extentReports.setSystemInfo("Author Name", "Vijay");
+		extentReports.setSystemInfo("Author Name", "Mahesh");
 		extentReports.setSystemInfo("Release", prpt.getProperty("release"));
-		extentReports.setSystemInfo("Project Name", "Selenium Training");
-		extentReports.setSystemInfo("Executor", "Arun");
-		extentReports.setSystemInfo("Reviewer", "Gopi");
+		extentReports.setSystemInfo("Project Name", "Aspen Demo");
+		extentReports.setSystemInfo("Executor", "Maheshkumar");
+		extentReports.setSystemInfo("Reviewer", "Jagannathan");
 		//		extentTest=extentReports.createTest("TestCase1");   //creating test case to enter log details pass/fail statements
 		//closing the report
 	}
