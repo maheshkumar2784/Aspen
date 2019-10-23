@@ -23,6 +23,11 @@ public class AspenLoginPage extends TestBase{
 	@FindBy(id="sign-in-submit") 
 	WebElement btnSignIn;
 	
+	@FindBy(xpath="//div[@id='failure']//span") 
+	WebElement Errmsg;
+	
+			
+	//String actualMsg = driver2.findElement(By.xpath("//div[@id='statusMsg']/div[@class='alert in fade alert-error']")).getAttribute("innerHTML");
 	public WebElement getTxtUserName() {
 		return txtUserName;
 	}
@@ -35,6 +40,10 @@ public class AspenLoginPage extends TestBase{
 		return btnSignIn;
 	}
 
+	public WebElement getErrmsg() {
+		return Errmsg;
+	}
+	
 	public AspenLoginPage() {
 		PageFactory.initElements(driver, this);
 	}	

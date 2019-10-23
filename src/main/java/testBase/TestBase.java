@@ -89,7 +89,7 @@ public class TestBase extends commonObjects{
 		System.out.println("This is After Suite Method");
 		Thread.sleep(5000);
 		log.info("Browser is closing");
-//		driver.quit();
+		driver.quit();
 	}
 	/*
 	@BeforeTest
