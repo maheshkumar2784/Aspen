@@ -94,7 +94,7 @@
 				<version>2.17</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>SmokeTest.xml</suiteXmlFile>
+						<suiteXmlFile>RegressionTest.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
